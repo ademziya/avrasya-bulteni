@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avrasya Araştırmaları Bülteni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9733;</span>
+                <span class="logo-text">Avrasya Araştırmaları Bülteni</span>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü aç">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active">Ana Sayfa</a></li>
+                <li><a href="makaleler.html">Makaleler</a></li>
+                <li><a href="kitaplar.html">Kitaplar</a></li>
+                <li><a href="sempozyumlar.html">Sempozyumlar</a></li>
+                <li><a href="hakkimda.html">Hakkında</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Avrasya Araştırmaları Bülteni</h1>
+            <div class="hero-subtitle">Eurasian Research Bulletin</div>
+            <p>Avrasya coğrafyası üzerine güncel akademik yayınları, kitapları ve sempozyumları takip eden bağımsız bir bilgi platformu.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Son Yayınlar</h2>
+                    <a href="makaleler.html">Tümünü Gör →</a>
+                </div>
+                
+                <div class="filter-bar" id="filterButtons">
+                    <button class="filter-btn active" data-tur="tumu">Tümü</button>
+                    <button class="filter-btn" data-tur="makale">Makaleler</button>
+                    <button class="filter-btn" data-tur="kitap">Kitaplar</button>
+                    <button class="filter-btn" data-tur="sempozyum">Sempozyumlar</button>
+                </div>
+                
+                <div id="yayinlarContainer">
+                    <!-- JS ile doldurulacak -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Avrasya Araştırmaları Bülteni. Tüm hakları saklıdır.</p>
+            <p class="footer-credit">Akademik bilgi paylaşımı amacıyla hazırlanmıştır.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            const links = document.getElementById('navLinks');
+            links.classList.toggle('open');
+            this.textContent = links.classList.contains('open') ? '✕' : '☰';
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
