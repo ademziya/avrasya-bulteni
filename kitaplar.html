@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitaplar — Avrasya Araştırmaları Bülteni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">&#9733;</span>
+                <span class="logo-text">Avrasya Araştırmaları Bülteni</span>
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Menüyü aç">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="makaleler.html">Makaleler</a></li>
+                <li><a href="kitaplar.html" class="active">Kitaplar</a></li>
+                <li><a href="sempozyumlar.html">Sempozyumlar</a></li>
+                <li><a href="hakkimda.html">Hakkında</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container page-header">
+            <h1>Kitaplar</h1>
+            <p>Avrasya çalışmaları alanında yayımlanan güncel kitaplar ve monografiler</p>
+        </div>
+        <div class="container" id="kitaplarContainer" style="padding-bottom:64px;"></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Avrasya Araştırmaları Bülteni. Tüm hakları saklıdır.</p>
+            <p class="footer-credit">Akademik bilgi paylaşımı amacıyla hazırlanmıştır.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileToggle').addEventListener('click', function() {
+            const links = document.getElementById('navLinks');
+            links.classList.toggle('open');
+            this.textContent = links.classList.contains('open') ? '✕' : '☰';
+        });
+
+        fetch('data/yayinlar.json')
+            .then(r => r.json())
+            .then(data => {
+                const kitaplar = data.filter(y => y.tur === 'kitap');
+                const container = document.getElementById('kitaplarContainer');
+                container.innerHTML = kitaplar.map(y => kartHtml(y)).join('');
+                if (!kitaplar.length) container.innerHTML = '<p>Henüz kitap bulunmamaktadır.</p>';
+            })
+            .catch(() => {
+                document.getElementById('kitaplarContainer').innerHTML = '<p style="padding:40px 0;color:#6b5f53;">Veriler yüklenemedi.</p>';
+            });
+
+        function kartHtml(y) {
+            const etiketler = y.etiket && y.etiket.length
+                ? y.etiket.map(e => `<span style="background:#e8e0d4;color:#6b4226;font-size:0.7rem;padding:2px 8px;border-radius:3px;margin-right:4px;">${e}</span>`).join('')
+                : '';
+            return `
+                <article class="card">
+                    <div class="card-meta">
+                        <span class="card-tag kitap">Kitap</span>
