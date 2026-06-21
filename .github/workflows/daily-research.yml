@@ -1,0 +1,37 @@
+name: Günlük Avrasya Araştırması
+
+on:
+  schedule:
+    # Her gün TSİ 09:00'da çalışır (UTC 06:00)
+    - cron: '0 6 * * *'
+  workflow_dispatch:  # Manuel de çalıştırabilirsiniz
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Repoyu klonla
+        uses: actions/checkout@v4
+      
+      - name: Python kurulumu
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      
+      - name: Bağımlılıkları yükle
+        run: |
+          pip install requests feedparser
+      
+      - name: Yeni yayınları tara
+        run: |
+          python .github/scripts/arastirma.py
+      
+      - name: Değişiklikleri commit et ve pushla
+        run: |
+          git config user.name "avrasya-bot"
+          git config user.email "bot@avrasya-bulteni.vercel.app"
+          git add data/yayinlar.json
+          git diff --staged --quiet || (git commit -m "📅 Günlük araştırma güncellemesi - $(date +'%d-%m-%Y')" && git push)
