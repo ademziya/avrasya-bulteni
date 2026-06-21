@@ -1,0 +1,95 @@
+[
+    {
+        "id": 1,
+        "tur": "makale",
+        "baslik": "Tracing the Geopolitical Influence and Regional Power Dynamics in Central Asia",
+        "yazarlar": "Çeşitli Yazarlar",
+        "kaynak": "Springer",
+        "dergi": "Central Asian Survey",
+        "ozet": "Bu çalışma, Orta Asya'daki jeopolitik etki ve bölgesel güç dinamiklerini neorealist perspektiften analiz etmektedir. Çin'in Kuşak ve Yol Girişimi, Rusya'nın KGAÖ ve AEB politikaları ile ABD'nin bölgedeki stratejik çıkarları arasındaki rekabet mercek altına alınmıştır. Araştırma, Orta Asya devletlerinin çoklu dış politika stratejilerini ve bu stratejilerin bölgesel istikrar üzerindeki etkilerini incelemektedir.",
+        "link": "https://link.springer.com",
+        "tarih": "2025",
+        "etiket": ["Orta Asya", "Jeopolitik", "Neorealizm", "Güç Dinamikleri"]
+    },
+    {
+        "id": 2,
+        "tur": "makale",
+        "baslik": "Iran and Central Asia: Eurasian Geopolitics in a Changing World Order",
+        "yazarlar": "Çeşitli Yazarlar",
+        "kaynak": "Taylor & Francis",
+        "dergi": "Central Asian Affairs",
+        "ozet": "İran'ın Orta Asya politikasını realist-konstrüktivist bir çerçevede ele alan bu çalışma, Tahran'ın bölgesel stratejilerini üç boyutta değerlendirmektedir: (1) ekonomik diplomasi ve transit ticaret koridorları, (2) kültürel-dini bağlar ve Fars dili etkisi, (3) güvenlik iş birliği ve Afganistan'daki ortak kaygılar.",
+        "link": "https://www.tandfonline.com",
+        "tarih": "2025",
+        "etiket": ["İran", "Orta Asya", "Jeopolitik", "Realizm", "Konstrüktivizm"]
+    },
+    {
+        "id": 3,
+        "tur": "makale",
+        "baslik": "Rethinking and Arresting Eurasian Hegemony",
+        "yazarlar": "Çeşitli Yazarlar",
+        "kaynak": "Oxford Academic",
+        "dergi": "International Affairs",
+        "ozet": "Bu makale, Avrasya hegemonyası kavramını yeniden düşünmekte ve Orta Asya'nın Hint-Pasifik stratejilerindeki dönüşen rolünü incelemektedir. Yazarlar, geleneksel Avrasyacılık söylemlerinin ötesine geçerek, Orta Asya devletlerinin Çin ile ABD arasındaki rekabette nasıl bir 'köprü' veya 'tampon bölge' işlevi gördüğünü tartışmaktadır.",
+        "link": "https://academic.oup.com",
+        "tarih": "2025",
+        "etiket": ["Hegemonya", "Hint-Pasifik", "Avrasya", "Güç Dengesi"]
+    },
+    {
+        "id": 4,
+        "tur": "makale",
+        "baslik": "The Eurasian Economic Union (EAEU) after a Decade: Public Perception in Armenia, Kazakhstan, and Kyrgyzstan",
+        "yazarlar": "Çeşitli Yazarlar",
+        "kaynak": "Taylor & Francis",
+        "dergi": "Eurasian Geography and Economics",
+        "ozet": "AEB'nin onuncu yılında kamuoyu algısını inceleyen bu özgün çalışma, Ermenistan, Kazakistan ve Kırgızistan'da gerçekleştirilen odak grup görüşmelerine dayanmaktadır. Bulgular, kamu desteğinde istikrarlı bir düşüş olduğunu göstermektedir.",
+        "link": "https://www.tandfonline.com",
+        "tarih": "2026",
+        "etiket": ["AEB", "Kamu Algısı", "Bölgesel Entegrasyon", "Egemenlik"]
+    },
+    {
+        "id": 5,
+        "tur": "kitap",
+        "baslik": "After Karabakh: War, Peace, and the Forging of a New Caucasus",
+        "yazarlar": "Silk Road Studies Yayınları",
+        "kaynak": "Silk Road Studies",
+        "ozet": "Karabağ sonrası dönemde Kafkasya'nın yeniden şekillenmesini konu alan bu kitap, bölgesel çatışma çözümü, güç dengeleri ve yeni jeopolitik ittifakları akademik bir perspektifle analiz etmektedir.",
+        "link": "https://www.silkroadstudies.org",
+        "tarih": "2025",
+        "etiket": ["Kafkasya", "Karabağ", "Barış Çalışmaları", "Jeopolitik"]
+    },
+    {
+        "id": 6,
+        "tur": "kitap",
+        "baslik": "The Silk Road After Ukraine: A New Vision for Eurasian Connectivity",
+        "yazarlar": "Çeşitli Yazarlar",
+        "kaynak": "Lexington Books",
+        "dergi": "Contemporary Central Asia Serisi",
+        "ozet": "Rusya'nın Ukrayna'yı işgalinin İpek Yolu'nun yeniden canlanması üzerindeki etkisini inceleyen bu kitap, savaşın hem bir kırılma noktası hem de katalizör olduğunu savunmaktadır.",
+        "link": "https://rowman.com/ISBN/9781666944301",
+        "tarih": "2025",
+        "etiket": ["İpek Yolu", "Ukrayna Savaşı", "Orta Koridor", "Enerji Jeopolitiği"]
+    },
+    {
+        "id": 7,
+        "tur": "sempozyum",
+        "baslik": "VII. Uluslararası Avrasya Sosyal Bilimler ve Sanat Sempozyumu (ESSA 2026)",
+        "yazarlar": "KutBilim Derneği & Oş Devlet Üniversitesi",
+        "kaynak": "ESSA Sempozyum",
+        "ozet": "Sosyal bilimler ve sanat alanında düzenlenecek olan VII. Uluslararası Avrasya Sempozyumu'na bildiri özetleri kabul edilmektedir. Kabul edilen bildiriler ISBN'li kitapta yayımlanacaktır.",
+        "link": "https://essasymposium.org/tr/",
+        "tarih": "2026",
+        "etiket": ["Sosyal Bilimler", "Sanat", "Sempozyum", "Çağrı"]
+    },
+    {
+        "id": 8,
+        "tur": "sempozyum",
+        "baslik": "Avrasya Bilimsel Araştırmalar ve İnovasyon Kongresi 2026",
+        "yazarlar": "Euroasia Congress",
+        "kaynak": "Euroasia Congress",
+        "ozet": "Disiplinlerarası bilimsel araştırmalar ve inovasyon konulu bu kongreye bildiri özetleri kabul edilmektedir. Tam metin gönderimi zorunlu olmayan kongre çevrim içi olarak düzenlenecektir.",
+        "link": "https://www.euroasiacongress.org/research",
+        "tarih": "2026",
+        "etiket": ["İnovasyon", "Bilimsel Araştırma", "Kongre", "Disiplinlerarası"]
+    }
+]
