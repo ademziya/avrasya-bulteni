@@ -355,3 +355,86 @@ body {
         gap: 8px;
     }
 }
+/* ===== Hakkımda Sayfası ===== */
+.hakkimda-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 3rem auto;
+    max-width: 800px;
+}
+
+.hakkimda-content .hakkimda-card {
+    background: #fff;
+    border: 1px solid #e0d5c1;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hakkimda-content .hakkimda-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.hakkimda-content .hakkimda-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #c9a84c;
+}
+
+.hakkimda-content .hakkimda-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.hakkimda-content .hakkimda-card p:last-child {
+    margin-bottom: 0;
+}
+
+.hakkimda-content .hakkimda-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+}
+
+.hakkimda-content .hakkimda-card ul li {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #333;
+    padding: 0.4rem 0 0.4rem 1.5rem;
+    position: relative;
+}
+
+.hakkimda-content .hakkimda-card ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #c9a84c;
+    font-weight: bold;
+}
+
+.hakkimda-content .hakkimda-card a {
+    color: #1a1a2e;
+    text-decoration: underline;
+    text-decoration-color: #c9a84c;
+    text-underline-offset: 3px;
+    transition: color 0.2s;
+}
+
+.hakkimda-content .hakkimda-card a:hover {
+    color: #c9a84c;
+}
+
+.hakkimda-content .hakkimda-card em {
+    color: #666;
+    font-size: 0.9rem;
+}
